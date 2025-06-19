@@ -1,0 +1,28 @@
+Float Formation
+include <math.h>
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <stdlib.h>
+
+#include <assert.h>
+
+#include <limits.h>
+
+#include <stdbool.h>
+
+int main() 
+
+{
+
+    float a;
+
+    scanf("%f",&a);
+
+    printf("%.06f\n%.04f\n%.02f\n%d",a,a,a,(int)ceil(a));
+
+    return 0;
+
+}
