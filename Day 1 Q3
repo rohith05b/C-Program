@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int intValue;
+    float floatValue;
+    char charValue;
+    char str1[100], str2[100];
+
+    scanf("%d", &intValue);
+    scanf("%f", &floatValue);
+    scanf(" %c", &charValue);     
+    scanf("%s", str1);            
+    getchar();                    
+    fgets(str2, sizeof(str2), stdin); 
+
+  
+    int len = 0;
+    while (str2[len] != '\0') {
+        if (str2[len] == '\n') {
+            str2[len] = '\0';
+            break;
+        }
+        len++;
+    }
+
+    
+    printf("Integer is %d\n", intValue);
+    printf("Float is %.2f\n", floatValue);
+    printf("Character is %c\n", charValue);
+    printf("Strings are %s and %s\n", str1, str2);
+
+    return 0;
+}
